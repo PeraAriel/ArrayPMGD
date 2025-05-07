@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Product } from '../product-model';
+
 
 @Component({
   selector: 'app-product-detail',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './product-detail.component.html',
-  styleUrl: './product-detail.component.css'
+  styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent {
-
+  @Input() product: Product | null = null;
 }

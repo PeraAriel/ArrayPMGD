@@ -46,3 +46,12 @@ export class ProductListComponent {
     }
   }
 }
+
+
+/*
+  Questo componente Angular standalone ('ProductListComponent') gestisce un elenco di prodotti
+  con la possibilità di visualizzarne i dettagli, aggiungerne di nuovi e rimuoverli.
+  Utilizza un array `products` come archivio locale, un oggetto `newProduct` per il form di inserimento,
+  e `selectedProduct` per mostrare i dettagli tramite il componente `ProductDetailComponent`.
+  Include anche il supporto a moduli comuni (CommonModule) e form (FormsModule).
+*/
